@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Charlotte Sharp - Cummins</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff5f5;
+      color: #4a1c1c;
+    }
+
+    header {
+      background-color: #ffcccc;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    header button {
+      background-color: #e57373;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    header button:hover {
+      background-color: #d32f2f;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 32px;
+      color: #b71c1c;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 40px;
+      color: #880e4f;
+    }
+
+    .project-box {
+      background-color: #ffe5e5;
+      border-left: 6px solid #e57373;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+
+    .project-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #b71c1c;
+    }
+
+    .project-description {
+      background-color: #fffafa;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #f8c1c1;
+      font-size: 16px;
+      font-weight: normal;
+      color: #5a2a2a;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 40px 20px;
+      background-color: #ffe5e5;
+      border-top: 4px solid #e57373;
+    }
+
+    .gallery img {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #ffcccc;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 16px;
+      color: #4a1c1c;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Charlotte Sharp</h1>
+    <button onclick="document.getElementById('footer').scrollIntoView()">Contact</button>
+  </header>
+
+  <div class="container">
+    <div class="title">My Work at Cummins</div>
+    <div class="subtitle">IT Systems Analyst Placement Student</div>
+
+    <div class="project-box">
+      <div class="project-title">Project Etoile</div>
+      <div class="project-description">In the fourth month of my placement, I joined “Project Etoile,” supporting Cummins’ expansion into France by integrating the Lyon and Nantes sites into Cummins’ IT infrastructure and policies. As part of the IT integration team, my role focused on deploying new Cummins devices to users at the Lyon site and transferring both professional and personal data from their old devices.
+	I travelled to Lyon with two experienced IT team members to complete this task. My responsibilities included setting up 50 users with new laptops tailored to their software needs, providing bilingual training resources, ensuring daily updates to the S and V drives, and serving as a support contact for French users. Key challenges included managing time around user schedules and overcoming the language barrier. To address this, I created individual setup schedules and developed French-English support materials, which improved efficiency and user satisfaction.
+	A major concern was the secure transfer of personal data, which could contain sensitive information. To mitigate risks, I studied the data transfer scripts in detail, monitored outputs, and tracked progress closely. During the final data push, the script completed in under a minute instead of the expected three hours, with no clear error. Drawing on my earlier script study, I identified that the disk reference letter had defaulted incorrectly. After correcting the script, the data transfer completed successfully.
+	This experience underscored the importance of understanding technical processes, especially in coding and troubleshooting, and highlighted the value of preparation, adaptability, and clear communication in cross-cultural IT projects.
+	</div>
+    </div>
+
+    <div class="project-box">
+      <div class="project-title">Onboarding Buddy</div>
+      <div class="project-description">At the end of my placement, I was tasked with creating resources for my successor and providing a week of training during the crossover period. My colleague, Rida, and I decided to create an AI agent to host company information, HR application tutorials, and task-specific details to aid new starters at Cummins.
+	We held several meetings with the innovation team leading the AI campaign, discussing our approach and receiving a useful template. Rida and I conducted surveys and interviews with other placement students to determine the business need and value, and discussed with the onboarding team how the AI agent could benefit all new employees. I learned the importance of documentation and proof when pitching, as our pitch was stronger with statistical evidence.
+	During our research, we discovered an engineering efficiency employee had been working on a similar idea for the engineering department for the past year. We redirected our pitch to him, hoping to collaborate. Our pitch was successful, and we were then included in the pilot testing different AI vendors including Glean and Chat GPT. It was really interesting to compare how both vendors performed for our use case and also to have a look through the other agents that had been made by the rest of the team. I discovered the importance of specifying tone and instructions for an agent to follow and uncovered some hallucination patterns which proved useful in testing other teams agents as well. More recently I have attended educational meetings alongside the innovation team and given examples on how our agent works. I look forward to see how this project continues over the next year and the new generation of new starters making use of our Onboarding buddy. 
+	</div>
+    </div>
+
+    <div class="project-box">
+      <div class="project-title">Power Apps</div>
+      <div class="project-description">One of my main responsibilities this past year was to create, improve and maintain applications used within different areas of the business. The applications can be seen in Movex, Incremental discount, Strategic Stock, MRC requests etc. 
+	During the first month I created a Movex Intake Request application where users can submit issues and check their progress, while the IT team work on them. This application provided a structure for the weekly sprint planning meetings, saving unproductive time, and ensured the correct people were being notified for scheduled tasks. 
+	Another notable piece of work was streamlining the IDR application which previously required users to pre download forms to be submitted within the application, which caused time wasting of reloading pages and often the wrong types of form being used. Instead, I added a download feature to the application which opened the correct form in a new tab based on the type of request selected. 
+	During my time creating and maintaining applications I was able to apply my knowledge of application design learnt in my human computer interaction module at university. I found a lot of existing applications within Cummins had great functionality, but users often found them too complicated to use so I aimed to simplify them, applying the principles form the course. 
+	I see an opportunity in the future to create a management system to host all the company’s existing applications as I believe a lot of copies of application are made as people are unaware they exist. It would also important to check that all application currently in use are compatible with SAP or can be modified to be compatible, otherwise we risk facing downtime. 
+	</div>
+    </div>
+
+    <div class="project-box">
+      <div class="project-title">Power Automate</div>
+      <div class="project-description">The past year I have worked greatly with Power Automate to create flows that automate manual tasks, as well as modifying flows when there is an issue. I was able to use my knowledge in coding and flow diagrams to build these processes and apply them to different areas of the business. 
+	The first manual action I replaced was the manual file uploading for reports, which previously required an employee to download and upload email attachments to the correct area inside a SharePoint site. I saw this as a waste of time and created a flow to trigger when the email was received and automatically save the attachment to the correct location with the correct name. This ensured that all files followed the naming convention set and saved an estimated 30 minutes of work per week.  The principle of this flow was then replicated in the uploading of scanner files in Poland which saved an estimated 45 minutes of work per week. 
+	I got lots of opportunities to apply my trouble shooting skills to existing flows like the Movex Access Request Flow which often was getting stuck. I found this was because it was waiting for the wrong type of approval which was also the case for the WWID based access flow. While working on a fix for the strategic stock flow, I noticed that a lot of requests remain unattended and do not progress in the flow which causes an issue as if it runs longer than 30 days the request stops. I implemented a reminder mechanism to send notifications out to the employees were the request was pending to that occurred from 14 days of sitting idle, which reduced the amount of stopped requests by half. 
+	Something that I have pushed for within Power Automate is creating documentation for any processes created. I found it much more difficult to improve a flow where I did not know the function or why actions were placed there, but when I started to create documentation for them revisiting was a lot easier. I also found that when given detailed documentation the initial requesters of the flow were able to make changes themselves. 
+	</div>
+    </div>
+
+    <div class="project-box">
+      <div class="project-title">Swedish Student Project</div>
+      <div class="project-description">At the beginning of January myself and fellow placement student Rida were given the opportunity to collaborate with some Swedish student’s university project. We were given guidance by Andrew and Ram about the nature of the problem statement we presented the students with but also had the independence to generate our own data and lead the supporting sessions. 
+	The problem statement created outlined that the existing ticketing system we had in place was inefficient and was generating an excessive work load. To improve the system, we wanted to explore the possibility of using an AI driven solution and compare architectures to see what would be the best fit. 
+	To begin with myself and Rida generated some generic ticket data basing it off common user requests but not using any exact duplicates to protect data privacy. The students then analyzed the data to see if an AI solution would be beneficial, it was important to determine if it would make a difference based on what type most of the tickets were. Rida and I supported the process with weekly meetings to answer any questions and offer any ideas we had to help categorize the ticket types, which resulted in a conclusion that 70% could be handled by AI. 
+	For the next 3 months we continued these meetings to discuss different architectures and their pros and cons. We were able to connect with others at Cummins to get diagrams of how the existing ticketing system works which helped to explain to the girls.  We previewed their presentations and reports before they were submitted, offered advice on any edits and set up some time for them to present to our IT team and the AME team. 
+	I thoroughly enjoyed the process of working with these girls as they were similarly aged and like minded to both Rida and me. It was a great opportunity to test our knowledge of our systems by explaining it to someone else and I learnt a lot about different AI solutions through reading their paper. We received feedback after they had submitted, and I was delighted to hear they enjoyed working with us both and that one of the girls had got herself an internship and gave credit to this project. It was very rewarding to know we had helped someone and I will look for opportunities to do it again. 
+	</div>
+    </div>
+
+    <div class="project-box">
+      <div class="project-title">SharePoint Sites</div>
+      <div class="project-description">A large majority of the applications and flows I have worked on have been linked to SharePoint sites, either by lists or file storage. This meant that I got quite experienced in editing sites for each of their purposes and was able to start creating new sites when new opportunities arose. 
+	A lot of the sites I have edited were done to become more accessible for users as they were struggling to find files they needed access to. I have implemented folder structure within the strategic stock site and the Incremental discount request site which reduced user questions and support. I also moved a lot of PowerApps to be hosted within SharePoint sites to ensure that data was being entered correctly into forms. Particularly in the Movex access site, users were entering information directly into the list which did not perform validation, but by moving the app to the site they were forced to enter information into the application which was validated first before it got entered into the list and started a flow. 
+	During Project Etoile I connected with the HR department in Lyon who expressed the need to have a site to communicate announcements and changes to the office instead of detailing everything in emails. I requested the creation of this site and offered a tutorial to the HR team on how to edit the site to get it how they want it to be. 
+	At the beginning of the year, I was in discussion of creating a new document management system with a longer retention period for some project data. After some vendor meetings we concluded to keep using SharePoint but to extend the period on the site, which required a new site to be created. As this site layout was to be a copy of a previous one I managed to create an automated flow to copy each page across and then I manually changed some links to ensure they pointed to the correct site location. Previously this task would be estimated to take a week but with my process it only took a day, which meant we were ready to use it earlier. This same site is used to share information with external users, so another task is to maintain the access levels granted to different groups. 
+	</div>
+    </div>
+
+    <div class="project-box">
+      <div class="project-title">EEEC and Team Meetings</div>
+      <div class="project-description">Throughout the year there were many opportunities to take part in EEEC events and in June we managed to organize one with the members of the IT team. A group of 7 of us headed over the Stanwick lakes where we were removing wire and screws from wood planks which were being used to build a ramp up to the bird watching house, pictures from this day can be seen below in the gallery. As well as this being a chance to give back which is rewarding in itself it was nice to be able to work as a team in a different environment. One of the biggest things I learnt this year was that in order to have a good team ethic it is important to have personal conversations as well as professional ones. 
+	During each quarter, we tried to get together for an all day in person meeting with the whole of the IT team. This required a lot of planning as many members were travelling over seas and across countries to attend, and this task often fell with myself and Rida. We managed to share the responsibilities between us by working together to create a schedule of events, Rida would then create the presentation, while I focused on the resources like room booking and caterings as well as people organizing. During this year we have led 4 meetings like this as well as conducting presentations about our projects and team-building games. Our team were always very thankful for these get togethers and photos of this can be seen in the gallery below. 
+	As well team meetings I also attended networking and learning events with other placement students form across the UK. I have spent a morning learning about the Quality team and process taking part in activities and quizzes, had an afternoon in Wellingborough networking with students, and spent a day in Peterborough learning about the order to cash process, and meeting all the different teams required. As well as these being refreshing and fun, I was able to network through different departments and work with students from marketing and people form the claims team later on. 
+	</div>
+    </div>
+
+    <div class="project-box">
+      <div class="project-title">Extra Certifications</div>
+      <div class="project-description">I was advised at the start of the year that there would be occasions in my placement where work wise it would be quiet, and I would be required to work independently on things if surrounding managers were out of office or tied up in meetings. I spent this time completing extra certifications, making use of the company’s links with Percipio. 
+	A big interest of mine in Cyber Security and one course that was recommended was Application Security, which had 3 levels: bronze silver and gold. During my first 6 months of placement, I was able to complete all levels and made some links into some processes within the company. I was able to discuss current risk plans with colleagues and understand systems like the manual API sessions that occur every 6 months. 
+	More recently I am in enrolled in SAP learning courses as I understand that will play a huge part in the future of the company and I want to be able to help where I can. I also still have my firm interest in Cyber Security so I am also enrolled in a pathway to learn the steps of being a security analyst to a security architect, which is something I would be interested in as a later career. 
+	</div>
+    </div>
+
+    <div class="project-box">
+      <div class="project-title">Future Work</div>
+      <div class="project-description">One of my biggest motivators when beginning my career in IT was that I would get the chance to educate and help other people. My main interest in Cyber Security is due to wanting to educate and inform others about the signs of attacks and what to be aware of, and I can see an opportunity for me to do this within Cummins. 
+	The transition to SAP is a huge project which will require a lot of people to adapt to new systems and be taught how to use them. I see this as an opportunity for me to use my motivation of helping and educating, to support this learning as I am confident that I can learn and relay this information well. 
+	Another consideration I am very interested in is the security aspect of migrating to a new ERP system. The data sensitivity labels, and access controls must remain strong, which is often built in within the cloud features, but it remains our responsibility to ensure these are configured correctly. I would be very keen to put my certification knowledge and SharePoint access knowledge into practice within this area to maintain security. 
+	As Cummins moves to a future working with more AI, labelling data will become more important to determine the correct privacy and access levels. From being included in the pilot testing of Chat GPT and Glean and also completing a machine learning module at university I have quite a bit of knowledge around AI and the security considerations and would be excited to put it into practice in this area. 
+	</div>
+    </div>
+  </div>
+
+  <div class="gallery">
+    <img src="image1.jpg" alt="Gallery Image 1">
+    <img src="image2.jpg" alt="Gallery Image 2">
+    <img src="image3.jpg" alt="Gallery Image 3">
+    <img src="image4.jpg" alt="Gallery Image 4">
+  </div>
+
+  <footer id="footer">
+    If you would like to know more email me <a href="mailto:Charlotte.Sharp@Cummins.com">Charlotte.Sharp@Cummins.com</a>
+  </footer>
+
+</body>
+</html>
+
+
+
+
+
