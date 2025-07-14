@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Charlotte Sharp - Cummins</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff5f5;
+      color: #4a1c1c;
+    }
+
+    header {
+      background-color: #ffcccc;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    header button {
+      background-color: #e57373;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    header button:hover {
+      background-color: #d32f2f;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 32px;
+      color: #b71c1c;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 40px;
+      color: #880e4f;
+    }
+
+    .project-box {
+      background-color: #ffe5e5;
+      border-left: 6px solid #e57373;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+
+    .project-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #b71c1c;
+    }
+
+    .project-description {
+      background-color: #fffafa;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #f8c1c1;
+      font-size: 16px;
+      font-weight: normal;
+      color: #5a2a2a;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 40px 20px;
+      background-color: #ffe5e5;
+      border-top: 4px solid #e57373;
+    }
+
+    .gallery img {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #ffcccc;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 16px;
+      color: #4a1c1c;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Charlotte Sharp</h1>
+    <button onclick="document.getElementById('footer').scrollIntoView()">Contact</button>
+  </header>
+
+  <div class="container">
+    <div class="title">My Work at Cummins</div>
+    <div class="subtitle">IT Systems Analyst Placement Student</div>
+
+    <div class="project-box">
+      <div class="project-title">Project Etoile</div>
+      <div class="project-description">Description goes here...</div>
+    </div>
+
+    <div class="project-box">
+      <div class="project-title">Onboarding Buddy</div>
+      <div class="project-description">Description goes here...</div>
+    </div>
+
+    <div class="project-box">
+      <div class="project-title">Power Apps</div>
+      <div class="project-description">Description goes here...</div>
+    </div>
+
+    <div class="project-box">
+      <div class="project-title">Power Automate</div>
+      <div class="project-description">Description goes here...</div>
+    </div>
+
+    <div class="project-box">
+      <div class="project-title">Swedish Student Project</div>
+      <div class="project-description">Description goes here...</div>
+    </div>
+
+    <div class="project-box">
+      <div class="project-title">SharePoint Sites</div>
+      <div class="project-description">Description goes here...</div>
+    </div>
+
+    <div class="project-box">
+      <div class="project-title">EEEC and Team Meetings</div>
+      <div class="project-description">Description goes here...</div>
+    </div>
+
+    <div class="project-box">
+      <div class="project-title">Extra Certifications</div>
+      <div class="project-description">Description goes here...</div>
+    </div>
+  </div>
+
+  <div class="gallery">
+    <img src="image1.jpg" alt="Gallery Image 1">
+    <img src="image2.jpg" alt="Gallery Image 2">
+    <img src="image3.jpg" alt="Gallery Image 3">
+    <img src="image4.jpg" alt="Gallery Image 4">
+  </div>
+
+  <footer id="footer">
+    If you would like to know more email me <a href="mailto:Charlotte.Sharp@Cummins.com">Charlotte.Sharp@Cummins.com</a>
+  </footer>
+
+</body>
+</html>
+
+
+
+
+
